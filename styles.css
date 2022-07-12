@@ -1,47 +1,45 @@
-body {
-    background: url(https://bestanimations.com/media/food/915341550bacon-animated-gif-2.gif) no-repeat fixed;
-    background-size: cover;
+.clock {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 10px solid;
+  border-radius: 50%;
 }
 
-h1 {
-    display: block;
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font-size: 200px;
-    text-align: center;
-    animation: animate 1.5s linear infinite;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    margin: 0;
+#second {
+  position: absolute;
+  background: black;
+  width: 2px;
+  height: 180px;
+  margin: 20px 199px;
+  animation: rotation 60s infinite linear;
+  transform-origin: bottom left;
 }
 
-@keyframes animate {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.7;
-    }
-
-    100% {
-        opacity: 0;
-    }
+#minute {
+  position: absolute;
+  background: black;
+  width: 6px;
+  height: 140px;
+  margin: 60px 197px;
+  animation: rotation 3600s infinite linear;
+  transform-origin: bottom right;
 }
 
-img {
-    align-content: center;
+#hour {
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 120px;
+  margin: 80px 195px;
+  animation: rotation 216000s infinite linear;
+  transform-origin: bottom left;
 }
 
-p {
-    display: block;
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-align: center;
-    font-size: 40px;
-    text-align: center;
-    margin: 0;
-}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
