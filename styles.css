@@ -32,7 +32,7 @@
   width: 10px;
   height: 120px;
   margin: 80px 195px;
-  animation: rotation 216000s infinite linear;
+  animation: rotation 43200s infinite linear;
   transform-origin: bottom left;
 }
 
