@@ -40,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -48,6 +49,7 @@
 .box {
   position: relative;
 }
+
 .ball {
   position: absolute;
   height: 100px;
@@ -56,8 +58,8 @@
   border-radius: 50%;
   animation: bounce 2s infinite;
   background: pink;
-  
-  }
+
+}
 
 .step1 {
   position: absolute;
@@ -67,14 +69,14 @@
   background: cyan;
 }
 
-  .step2 {
+.step2 {
   position: absolute;
   top: 150px;
   left: 220px;
   margin-top: 20px;
   height: 10px;
   width: 220px;
-  background: cyan;  
+  background: cyan;
 }
 
 .step3 {
@@ -88,39 +90,45 @@
 }
 
 @keyframes bounce {
-     from {margin: 100pxz 0px;} 
-    to{margin: 50px 500px;} 
-	0% {
-		transform: translateY(-30%);
-	}
+  from {
+    margin: 100pxz 0px;
+  }
 
-	12% {
-		transform: translateY(33%);
-	}
+  to {
+    margin: 50px 500px;
+  }
 
-	24% {
-		transform: translateY(-66%);
-	}
+  0% {
+    transform: translateY(-30%);
+  }
 
-   36% {
-		transform: translateY(33%);
-	}
+  12% {
+    transform: translateY(33%);
+  }
 
-  	48% {
-		transform: translateY(-20%);
-	}
-  
-  	100% {
-		transform: translateY(33%);
-	}
+  24% {
+    transform: translateY(-66%);
+  }
+
+  36% {
+    transform: translateY(33%);
+  }
+
+  48% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: translateY(33%);
+  }
 }
 
 .container {
-  top: 150px;
+  top: 300px;
   left: 150px;
-  height:50px;
+  height: 50px;
   width: 300px;
-  position:relative;
+  position: relative;
 }
 
 button {
@@ -156,18 +164,18 @@ img {
   transform: rotate(270deg);
 }
 
-.container:hover .leaf1{ 
-   transform: translate3d(-100px,-100px,10px) rotate(-45deg);
+.container:hover .leaf1 {
+  transform: translate3d(-100px, -100px, 10px) rotate(-45deg);
 }
 
-.container:hover .leaf2{ 
-   transform: translate3d(100px,-100px,10px) rotate(90deg);
+.container:hover .leaf2 {
+  transform: translate3d(100px, -100px, 10px) rotate(90deg);
 }
 
-.container:hover .leaf3{ 
-   transform: translate3d(-100px,100px,10px) rotate(-180deg);
+.container:hover .leaf3 {
+  transform: translate3d(-100px, 100px, 10px) rotate(-180deg);
 }
 
-.container:hover .leaf4{ 
-   transform: translate3d(100px,100px,10px) rotate(-90deg);
+.container:hover .leaf4 {
+  transform: translate3d(100px, 100px, 10px) rotate(-90deg);
 }
