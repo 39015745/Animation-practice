@@ -146,6 +146,10 @@ button {
   font-family: serif;
 }
 
+button:active {
+  background: #e76f51;
+}
+
 img {
   position: absolute;
   width: 150px;
