@@ -1,4 +1,5 @@
 .clock {
+  margin-bottom: 40px;
   display: inline-block;
   position: relative;
   width: 400px;
@@ -48,6 +49,7 @@
 }
 
 .gears {
+  height: 500px;
   display: inline-block;
   position: relative;
 }
