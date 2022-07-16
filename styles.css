@@ -100,6 +100,50 @@
   position: relative;
 }
 
+.activate {
+  position: relative;
+  bottom: 55px;
+  left: 5px;
+  height: 50px;
+  width: 140px;
+  border-radius: 15%;
+  background: black;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em; 
+}
+
+.activate:hover {
+  color: #fee440;
+}
+
+.button_box {
+  position:relative;
+  height: 60px;
+  width: 150px;
+  border: solid 1px;
+  overflow:hidden;
+  border-radius: 15%;
+  border: none;
+}
+
+.rainbow {  
+  position:absolute;
+  left: -5px;
+  top: -50px;
+  height: 160px;
+  width: 160px;
+  background: linear-gradient(#ffbe0b, #fb5607, #ff006e, #8338ec, #3a86ff);
+  animation: spin_border 3s linear infinite;
+}
+
+@keyframes spin_border {
+  100% {
+    transform: rotate( 1turn);
+  } 
+}
+
 .ball {
   position: absolute;
   height: 100px;
