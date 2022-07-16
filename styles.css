@@ -50,9 +50,11 @@
 
 .gears {
   height: 500px;
+  width: 500px;
   display: inline-block;
   position: relative;
 }
+
 .star1 {
   left: 115px;
   position: absolute;
@@ -82,28 +84,34 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
-  }  
+  }
 }
 
 @keyframes spin_reverse {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(-360deg);
-  }  
+  }
 }
 
 .box {
+  height: 300px;
   position: relative;
 }
 
-.activate {
+.rainbow_button {
   position: relative;
-  bottom: 55px;
-  left: 5px;
+  display: inline-block;
+  bottom: 250px;
+}
+
+.button_style {
   height: 50px;
   width: 140px;
   border-radius: 15%;
@@ -111,25 +119,31 @@
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1em; 
+  font-size: 1em;
 }
 
-.activate:hover {
+.activate {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.button_style:hover {
   color: #fee440;
 }
 
 .button_box {
-  position:relative;
+  position: relative;
   height: 60px;
   width: 150px;
   border: solid 1px;
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 15%;
   border: none;
 }
 
-.rainbow {  
-  position:absolute;
+.rainbow {
+  position: absolute;
   left: -5px;
   top: -50px;
   height: 160px;
@@ -140,8 +154,8 @@
 
 @keyframes spin_border {
   100% {
-    transform: rotate( 1turn);
-  } 
+    transform: rotate(1turn);
+  }
 }
 
 .ball {
@@ -218,10 +232,10 @@
 }
 
 .container {
-  top: 300px;
-  left: 150px;
-  height: 50px;
-  width: 300px;
+  display: inline-block;
+  padding: 100px;
+  height: 150px;
+  width: 150px;
   position: relative;
 }
 
