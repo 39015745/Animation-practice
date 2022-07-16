@@ -101,6 +101,7 @@
 }
 
 .box {
+  display: inline-block;
   height: 300px;
   position: relative;
 }
@@ -108,7 +109,7 @@
 .rainbow_button {
   position: relative;
   display: inline-block;
-  bottom: 250px;
+  bottom: 225px;
 }
 
 .button_style {
@@ -233,7 +234,7 @@
 
 .container {
   display: inline-block;
-  padding: 100px;
+  padding: 175px 100px;
   height: 150px;
   width: 150px;
   position: relative;
